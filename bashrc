@@ -7,6 +7,10 @@ if [ -d ~/arcanist ]; then
   source ~/arcanist/arcanist/resources/shell/bash-completion
 fi
 
+export POWERLINE=/usr/local/lib/python3.7/site-packages/powerline
+
 if [ -n $(which fish) ]; then
   export SHELL=$(which fish)
+  powerline-daemon
+  exec fish
 fi
