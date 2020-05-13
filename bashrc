@@ -8,7 +8,6 @@ if [ -d ~/arcanist ]; then
 fi
 
 export TERM=xterm-256color
-export POWERLINE=$(pip3 show powerline-status | grep "Location*" | cut -d " " -f2 )
 
 if [ -n $(which fish) ]; then
   export SHELL=$(which fish)

@@ -15,3 +15,5 @@ else
   sudo apt -y install ${deb_packages}
   ln -sf $PWD/tmux.conf.linux ~/.tmux.conf
 fi
+
+pip3 install powerline-status
