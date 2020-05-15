@@ -12,4 +12,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
+let &t_ut=''
+
+set termguicolors
+
+set background=dark
 colorscheme codedark
