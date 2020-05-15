@@ -10,11 +10,13 @@ if [ "$(uname)" == "Darwin" ]; then
   brew install python3-pip
   brew install fish
   ln -sf $PWD/config ~/.config
+  ln -sf $PWD/tools ~/.tools
 else
   deb_packages="tmux python3-pip fish"
   sudo apt -y install ${deb_packages}
   ln -sf $PWD/tmux.conf ~/.tmux.conf
   ln -sf $PWD/config/fish/config.fish ~/.config/fish/config.fish
+  ln -sf $PWD/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 fi
 
 pip3 install powerline-status
