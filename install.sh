@@ -9,13 +9,15 @@ if [ "$(uname)" == "Darwin" ]; then
   brew install tmux
   brew install python3-pip
   brew install fish
+  brew install neovim
   ln -sf $PWD/config ~/.config
 else
-  deb_packages="tmux python3-pip fish"
+  deb_packages="tmux python3-pip fish neovim"
   sudo apt -y install ${deb_packages}
   ln -sf $PWD/tmux.conf ~/.tmux.conf
-  ln -sf $PWD/config/fish/config.fish ~/.config/fish/config.fish
-  ln -sf $PWD/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
+  ln -sf $PWD/config/fish ~/.config/fish
+  ln -sf $PWD/config/kitty ~/.config/kitty
+  ln -sf $PWD/config/vim ~/.config/vim
 fi
 
 ln -sf $PWD/tools ~/.tools
