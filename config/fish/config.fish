@@ -7,4 +7,6 @@ if test -d $POWERLINE/powerline/bindings/fish
 	powerline-setup
 end
 
+alias vi="nvim"
+alias oldvi="vim"
 alias tmux="tmux -2 attach"
