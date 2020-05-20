@@ -7,6 +7,10 @@ export MYVIMRC="~/.vimrc"
 
 alias vi="nvim"
 
+if [ -d ~/.local/bin ]; then
+  export PATH=~/.local/bin:$PATH
+fi
+
 if [ -d ~/arcanist ]; then
   export PATH=~/arcanist/arcanist/bin:$PATH
   export PATH=~/.tools/arctools:$PATH
