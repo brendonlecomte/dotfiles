@@ -13,8 +13,11 @@ fi
 
 if [ -d ~/arcanist ]; then
   export PATH=~/arcanist/arcanist/bin:$PATH
-  export PATH=~/.tools/arctools:$PATH
   source ~/arcanist/arcanist/resources/shell/bash-completion
+fi
+
+if [ -n $(which arc) ]; then 
+  export PATH=~/.tools/arctools:$PATH
 fi
 
 if [ -n $(which fish) ]; then
