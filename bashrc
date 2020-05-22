@@ -21,7 +21,5 @@ if [ -n $(which arc) ]; then
 fi
 
 if [ -n $(which fish) ]; then
-  export SHELL=$(which fish)
   powerline-daemon --quiet
-  exec fish
 fi
