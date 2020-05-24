@@ -36,6 +36,7 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q                                                                           
   \| endif  
 
+let NERDTreeQuitOnOpen=1
 let &t_ut=''
 
 set termguicolors
