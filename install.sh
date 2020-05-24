@@ -21,7 +21,7 @@ else
   ln -sf $PWD/config/vim ~/.config/vim
   ln -sf $PWD/config/nvim ~/.config/nvim
 fi
-
+ln -sf $PWD/profile ~/.profile  
 ln -sf $PWD/tools ~/.tools
 
 pip3 install powerline-status
