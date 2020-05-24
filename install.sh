@@ -13,7 +13,7 @@ if [ "$(uname)" == "Darwin" ]; then
   brew install node
   ln -sf $PWD/config ~/.config
 else
-  deb_packages="tmux python3-pip fish neovim"
+  deb_packages="tmux python3-pip fish neovim nodejs"
   sudo apt -y install ${deb_packages}
   ln -sf $PWD/tmux.conf ~/.tmux.conf
   ln -sf $PWD/config/fish ~/.config/fish
