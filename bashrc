@@ -23,3 +23,5 @@ fi
 if [ -n $(which fish) ]; then
   powerline-daemon --quiet
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

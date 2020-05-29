@@ -14,4 +14,6 @@ let g:which_key_sep = '→'
 nnoremap <silent> <leader>e :NERDTreeToggle<CR>
 let g:which_key_map.e = 'Open NERDTree'
 
+nnoremap <silent> <leader>f :Files<CR>
+let g:which_key_map.f = "Find in files"
 " Register which key map

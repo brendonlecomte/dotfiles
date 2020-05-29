@@ -25,10 +25,14 @@ Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }                                                        
+Plug 'junegunn/fzf.vim' 
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 source ~/.config/vim/which-key.vim
 source ~/.config/nvim/coc.nvim.vim
+source ~/.config/vim/nerdtree.vim
 
 " Automatically install missing plugins on startup                                                      
 autocmd VimEnter *                                                                                      
