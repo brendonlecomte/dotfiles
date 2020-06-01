@@ -1,8 +1,5 @@
 #! /bin/bash
 
-ln -sf $PWD/bashrc ~/.bashrc
-ln -sf $PWD/bash_profile ~/.bash_profile
-ln -sf $PWD/vimrc ~/.vimrc
 
 if [ "$(uname)" == "Darwin" ]; then
   ln -sf $PWD/tmux.conf.osx ~/.tmux.conf
@@ -22,6 +19,7 @@ else
   ln -sf $PWD/config/nvim ~/.config/nvim
 fi
 ln -sf $PWD/profile ~/.profile  
+ln -sf $PWD/vimrc ~/.vimrc
 ln -sf $PWD/tools ~/.tools
 
 pip3 install powerline-status
