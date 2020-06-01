@@ -20,8 +20,8 @@ if [ -n $(which arc) ]; then
   export PATH=~/.tools/arctools:$PATH
 fi
 
-if [ -n $(which fish) ]; then
-  powerline-daemon --quiet
+if [ -f 'which powerline-daemon' ]; then
+  powerline-daemon -q
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
