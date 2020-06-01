@@ -16,16 +16,17 @@ if [ -d ~/arcanist ]; then
     source ~/arcanist/arcanist/resources/shell/bash-completion
 fi
 
-if [ -n $(which arc) ]; then 
+if [ -n $(which arc) ]; then
     export PATH=~/.tools/arctools:$PATH
 fi
 
-if [ -f 'which powerline-daemon' ]; then
+if [ -n $(which powerline-daemon) ]; then
     powerline-daemon -q
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-if [ -n "KITTY_WINDOW_ID" ] && [ -f "which fish" ] ; then
+if [ -n "$KITTY_WINDOW_ID" ] && [ -n $(which fish) ]; then
+    SHELL=fish
     exec fish
 fi
