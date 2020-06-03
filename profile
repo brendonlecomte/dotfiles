@@ -26,6 +26,11 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+if [ "$(uname)" == "Darwin" ] && [ -d $(brew --prefix llvm) ]; then
+    export PATH=$(brew --prefix llvm)/bin:$PATH
+fi
+
+
 if [ -n "$KITTY_WINDOW_ID" ] && [ -n $(which fish) ]; then
     SHELL=fish
     exec fish
