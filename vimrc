@@ -8,7 +8,10 @@ syntax on
 
 " Show whitespace using the characters listed
 set list
-set listchars=eol:¬,trail:~,space:.
+set listchars=eol:¬,trail:~,space:.,tab:>\
+
+" Remove trailing whitespace on save.
+autocmd BufWritePre * :%s/\s\+$//e
 
 source ~/.config/vim/plugins.vim
 source ~/.config/vim/indent.vim
