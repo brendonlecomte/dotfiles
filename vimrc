@@ -8,7 +8,7 @@ syntax on
 
 " Show whitespace using the characters listed
 set list
-set listchars=eol:¬,trail:~,space:.,tab:>\
+set listchars=eol:¬,trail:~,tab:>\ ,space:.
 
 " Remove trailing whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
