@@ -8,5 +8,6 @@ if test -d $POWERLINE/powerline/bindings/fish
 end
 
 alias vi="nvim"
+alias vim="nvim"
 alias oldvi="vim"
 alias tmux="tmux -2 attach"

@@ -6,6 +6,7 @@ export VIMINIT="source ~/.vimrc"
 export MYVIMRC="~/.vimrc"
 
 alias vi="nvim"
+alias vim="nvim"
 
 if [ -d ~/.local/bin ]; then
     export PATH=~/.local/bin:$PATH
