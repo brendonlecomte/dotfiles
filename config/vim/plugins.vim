@@ -16,15 +16,16 @@ Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
 Plug 'preservim/nerdtree'
+Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }                                                        
-Plug 'junegunn/fzf.vim' 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
 call plug#end()
 
-" Automatically install missing plugins on startup                                                      
-autocmd VimEnter *                                                                                      
-  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))                                         
-  \|   PlugInstall --sync | q                                                                           
-  \| endif  
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
