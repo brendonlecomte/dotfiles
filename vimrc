@@ -18,9 +18,9 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 source ~/.config/vim/plugins.vim
 source ~/.config/vim/indent.vim
-source ~/.config/vim/which-key.vim
 source ~/.config/nvim/coc.nvim.vim
 source ~/.config/vim/nerdtree.vim
+source ~/.config/vim/which-key.vim
 
 let NERDTreeQuitOnOpen=1
 let &t_ut=''
