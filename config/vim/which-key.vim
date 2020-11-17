@@ -19,6 +19,7 @@ let g:which_key_sep = '→'
 let g:which_key_map['e'] = [ ':NERDTreeToggle'            , 'explorer' ]
 let g:which_key_map['E'] = [ ':NERDTreeFind'              , 'show-file-in-explorer']
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
+let g:which_key_map['Z'] = [ ':Goyo'                      , 'ZenMode']
 
 " l is for language server protocol
 let g:which_key_map.l = {
