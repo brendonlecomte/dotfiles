@@ -7,6 +7,7 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'tomasiser/vim-code-dark'
+Plug 'lifepillar/vim-solarized8'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}

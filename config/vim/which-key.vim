@@ -21,6 +21,13 @@ let g:which_key_map['E'] = [ ':NERDTreeFind'              , 'show-file-in-explor
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['Z'] = [ ':Goyo'                      , 'ZenMode']
 
+" t is for themes
+let g:which_key_map.t = {
+    \ 'name' : '+themes' ,
+    \ 'd' : [':colorscheme codedark'                  , 'CodeDark'],
+    \ 's' : [':colorscheme solarized8'                , 'Solarized'],
+    \ }
+
 " l is for language server protocol
 let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
