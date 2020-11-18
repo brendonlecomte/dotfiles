@@ -22,8 +22,14 @@ let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['Z'] = [ ':Goyo'                      , 'ZenMode']
 
 " t is for themes
-let g:which_key_map.t = {
-    \ 'name' : '+themes' ,
+let g:which_key_map.v = {
+    \ 'name' : '+vim' ,
+    \ 'r' : [':set norelativenumber!'                  , 'Relative Numbers'],
+    \ 'n' : [':set nonumber!'                  , 'Line  Numbers'],
+    \ }
+
+let g:which_key_map.v.t = {
+    \ 'name' : '+themes',
     \ 'd' : [':colorscheme codedark'                  , 'CodeDark'],
     \ 's' : [':colorscheme solarized8'                , 'Solarized'],
     \ }
