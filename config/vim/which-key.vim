@@ -21,13 +21,16 @@ let g:which_key_map['E'] = [ ':NERDTreeFind'              , 'show-file-in-explor
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['Z'] = [ ':Goyo'                      , 'ZenMode']
 
-" t is for themes
+" v is for Vim, or editor settings
 let g:which_key_map.v = {
     \ 'name' : '+vim' ,
-    \ 'r' : [':set norelativenumber!'                  , 'Relative Numbers'],
-    \ 'n' : [':set nonumber!'                  , 'Line  Numbers'],
+    \ 'r' : [':set norelativenumber!'                 , 'Relative Numbers'],
+    \ 'n' : [':set nonumber!'                         , 'Line  Numbers'],
+    \ 'L' : [':Limelight!! 0.5'                       , 'Limelight'],
+    \ 'w' : [':set list!'                             , 'Whitespace Characters'],
     \ }
 
+" v.t is for themes
 let g:which_key_map.v.t = {
     \ 'name' : '+themes',
     \ 'd' : [':colorscheme codedark'                  , 'CodeDark'],

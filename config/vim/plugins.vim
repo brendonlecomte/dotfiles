@@ -22,6 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
 call plug#end()
