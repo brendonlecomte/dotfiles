@@ -35,6 +35,7 @@ let g:which_key_map.v.t = {
     \ 'name' : '+themes',
     \ 'd' : [':colorscheme codedark'                  , 'CodeDark'],
     \ 's' : [':colorscheme solarized8'                , 'Solarized'],
+    \ 'g' : [':colorscheme gruvbox'                   , 'Gruvbox'],
     \ }
 
 " l is for language server protocol
