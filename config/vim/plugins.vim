@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'tomasiser/vim-code-dark'
 Plug 'lifepillar/vim-solarized8'
 Plug 'morhetz/gruvbox'
+Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
@@ -17,7 +18,7 @@ Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-snippets'
 Plug 'voldikss/vim-floaterm'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
