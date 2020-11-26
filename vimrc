@@ -22,6 +22,7 @@ source ~/.config/nvim/coc.nvim.vim
 source ~/.config/vim/nerdtree.vim
 source ~/.config/vim/which-key.vim
 source ~/.config/vim/airline.vim
+source ~/.config/vim/key_mapping.vim
 
 let NERDTreeQuitOnOpen=1
 let &t_ut=''
