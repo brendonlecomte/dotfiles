@@ -28,10 +28,11 @@ let g:which_key_map.v = {
     \ 'n' : [':set nonumber!'                         , 'Line  Numbers'],
     \ 'L' : [':Limelight!! 0.5'                       , 'Limelight'],
     \ 'w' : [':set list!'                             , 'Whitespace Characters'],
+    \ 'b' : [':BlamerToggle'                          , 'Toggle Blamer'],
     \ }
 
-" v.t is for themes
-let g:which_key_map.v.t = {
+" v.T is for themes
+let g:which_key_map.v.T = {
     \ 'name' : '+themes',
     \ 'd' : [':colorscheme codedark'                  , 'CodeDark'],
     \ 's' : [':colorscheme solarized8'                , 'Solarized'],

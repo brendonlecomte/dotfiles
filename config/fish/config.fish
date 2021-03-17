@@ -11,3 +11,8 @@ alias vi="nvim"
 alias vim="nvim"
 alias oldvi="vim"
 alias tmux="tmux -2 attach"
+
+
+
+# Invoke tmux to start in fish shell
+tmux
