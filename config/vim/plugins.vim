@@ -37,6 +37,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 " Automatically install missing plugins on startup

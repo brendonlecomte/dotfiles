@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+
+ifconfig $@ | GREP_COLOR="1;33" grep --color=always -P "(?:\d+\.){3}\d+|(^[\d\w]+):|$"
+
