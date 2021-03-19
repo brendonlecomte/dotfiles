@@ -15,4 +15,6 @@ alias tmux="tmux -2 attach"
 
 
 # Invoke tmux to start in fish shell
-tmux
+if test -z $TMUX
+    tmux
+end
