@@ -1,4 +1,3 @@
-export PATH=~/gcc-arm-none-eabi-8-2018-q4-major/bin/:$PATH
 export PATH=~/.tools/helpers:$PATH
 export EDITOR=nvim
 export TERM=xterm-256color
@@ -18,11 +17,11 @@ if [ -d ~/arcanist ]; then
     source ~/arcanist/arcanist/resources/shell/bash-completion
 fi
 
-if [ -n $(which arc) ]; then
+if [ $(which arc) ]; then
     export PATH=~/.tools/arctools:$PATH
 fi
 
-if [ -n $(which powerline-daemon) ]; then
+if [ $(which powerline-daemon) ]; then
     powerline-daemon -q
 fi
 
@@ -31,7 +30,6 @@ fi
 if [ "$(uname)" == "Darwin" ] && [ -d $(brew --prefix llvm) ]; then
     export PATH=$(brew --prefix llvm)/bin:$PATH
 fi
-
 
 if [ -n "$KITTY_WINDOW_ID" ] && [ -n $(which fish) ]; then
     SHELL=fish
