@@ -23,6 +23,7 @@ source ~/.config/vim/which-key.vim
 source ~/.config/vim/airline.vim
 source ~/.config/vim/key_mapping.vim
 source ~/.config/vim/blamer.vim
+source ~/.config/vim/markdown.vim
 
 " themes and colouring
 let &t_ut=''

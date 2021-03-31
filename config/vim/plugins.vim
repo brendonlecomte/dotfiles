@@ -23,6 +23,9 @@ Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-snippets'
 
+" Markdown and Zettlekasten
+Plug 'plasticboy/vim-markdown'
+
 " Git Plugins
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
