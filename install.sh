@@ -1,24 +1,13 @@
-#! /bin/bash
+#! /usr/bin/env bash
 SCRIPT=$(readlink -f "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 
 # Install required tools
 # OS dependant config folder links
 if [ "$(uname)" == "Darwin" ]; then
-  brew install tmux
-  brew install python3-pip
-  brew install fish
-  brew install neovim
-  brew install node
-  brew install llvm
-  ln -sf $SCRIPTPATH/config ~/.config
+    source $SCRIPTPATH/tools/scripts/install_osx.sh $SCRIPTPATH
 else
-  deb_packages="tmux python3-pip fish neovim nodejs npm clangd-9 powerline-fonts"
-  sudo apt -y install ${deb_packages}
-  ln -sf $SCRIPTPATH/config/fish ~/.config/fish
-  ln -sf $SCRIPTPATH/config/kitty ~/.config/kitty
-  ln -sf $SCRIPTPATH/config/vim ~/.config/vim
-  ln -sf $SCRIPTPATH/config/nvim ~/.config/nvim
+    source $SCRIPTPATH/tools/scripts/install_ubuntu.sh $SCRIPTPATH
 fi
 
 # Link key files and folders
