@@ -29,6 +29,7 @@ let g:which_key_map.v = {
     \ 'L' : [':Limelight!! 0.5'                       , 'Limelight'],
     \ 'w' : [':set list!'                             , 'Whitespace Characters'],
     \ 'b' : [':BlamerToggle'                          , 'Toggle Blamer'],
+    \ 't' : [':set expandtab!'                         , 'Toggle Expandtab'],
     \ }
 
 " v.T is for themes

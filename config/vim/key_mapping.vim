@@ -5,3 +5,7 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+
+map <C-l> :tabn<cr>
+map <C-h> :tabp<cr>
