@@ -15,6 +15,7 @@ ln -sf $SCRIPTPATH/profile ~/.profile
 ln -sf $SCRIPTPATH/vimrc ~/.vimrc
 ln -sf $SCRIPTPATH/tools ~/.tools
 ln -sf $SCRIPTPATH/tmux.conf ~/.tmux.conf
+ln -sf $SCRIPTPATH/clang-format-defaults ~/.clang-format
 
 # Install the powerline display bar
 pip3 install powerline-status
