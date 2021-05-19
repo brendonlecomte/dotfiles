@@ -35,3 +35,5 @@ if [ -n "$KITTY_WINDOW_ID" ] && [ -n $(which fish) ]; then
     SHELL=fish
     exec fish
 fi
+
+alias dotfiles="git -C ~/dotfiles"
