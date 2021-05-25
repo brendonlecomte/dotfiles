@@ -10,11 +10,11 @@ end
 alias vi="nvim"
 alias vim="nvim"
 alias oldvi="vim"
-alias tmux="tmux -2 attach"
+alias pair="tmux -2 attach"
 
 
 
 # Invoke tmux to start in fish shell
-if test -z $TMUX
-    tmux
+if test -z "$TMUX"
+    tmux -2 attach
 end
