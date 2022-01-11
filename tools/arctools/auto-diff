@@ -1,2 +1,0 @@
-#!/bin/bash
-arc diff --allow-untracked -m "$HOSTNAME: auto update" HEAD~1
