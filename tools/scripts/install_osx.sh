@@ -12,9 +12,12 @@ brew update
 brew install tmux
 brew install python3-pip
 brew install fish
-brew install neovim
+brew install  --HEAD neovim
 brew install node
 brew install llvm
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+
 
 # link config folder into root directory
 ln -sf $1/config ~/.config
