@@ -10,6 +10,10 @@ else
     source $SCRIPTPATH/tools/scripts/install_ubuntu.sh $SCRIPTPATH
 fi
 
+# Install Rolling Lunarvim
+LV_BRANCH=rolling 
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh)
+
 # Link key files and folders
 ln -sf $SCRIPTPATH/profile ~/.profile
 ln -sf $SCRIPTPATH/vimrc ~/.vimrc

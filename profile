@@ -1,4 +1,4 @@
-export EDITOR=nvim
+export EDITOR=lvim
 export TERM=xterm-256color
 
 export VIMINIT="source ~/.vimrc"
