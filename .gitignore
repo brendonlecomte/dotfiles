@@ -1,9 +1,15 @@
 # fish files
 config/fish/functions
 config/fish/fish_variables
+config/fish/completions
 
 # yarn
 config/yarn/*
+
+#lvim bakups
+config/lvim.*
+config/lvim/ignore
+config/lvim/plugin
 
 # nvim autoload from plugins
 config/nvim/autoload
