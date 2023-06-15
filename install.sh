@@ -14,15 +14,23 @@ fi
 LV_BRANCH=rolling 
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh)
 
+#install fisher
+#https://github.com/jorgebucaran/fisher
+bash <(curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher)
+
+#install tide! 
+#https://github.com/IlanCosman/tide
+fish
+fisher install IlanCosman/tide@v5
+
 # Link key files and folders
 ln -sf $SCRIPTPATH/profile ~/.profile
-ln -sf $SCRIPTPATH/vimrc ~/.vimrc
 ln -sf $SCRIPTPATH/tools ~/.tools
-ln -sf $SCRIPTPATH/tmux.conf ~/.tmux.conf
+lq -sf $SCRIPTPATH/tmux.conf ~/.tmux.conf
 ln -sf $SCRIPTPATH/clang-format-defaults ~/.clang-format
 
 # Install the powerline display bar
-pip3 install powerline-status
+# pip3 install powerline-status
 
 # Install Kitty. GPU powered terminal
 read -r -p "Install Kitty Terminal? [y/N]" response

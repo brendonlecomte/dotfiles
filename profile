@@ -1,12 +1,6 @@
 export EDITOR=lvim
 export TERM=xterm-256color
 
-export VIMINIT="source ~/.vimrc"
-export MYVIMRC="~/.vimrc"
-
-alias vi="nvim"
-alias vim="nvim"
-
 if [ -d ~/.local/bin ]; then
     export PATH=~/.local/bin:$PATH
 fi
@@ -27,3 +21,4 @@ if [ -n "$KITTY_WINDOW_ID" ] && [ -n $(which fish) ]; then
 fi
 
 alias dotfiles="git -C ~/dotfiles"
+. "$HOME/.cargo/env"

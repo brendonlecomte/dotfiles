@@ -15,9 +15,9 @@ brew install fish
 brew install  --HEAD neovim
 brew install node
 brew install llvm
+brew install lazygit
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
-
 
 # link config folder into root directory
 ln -sf $1/config ~/.config

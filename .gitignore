@@ -2,5 +2,8 @@
 config/fish/functions
 config/fish/fish_variables
 
+# yarn
+config/yarn/*
+
 # nvim autoload from plugins
 config/nvim/autoload
