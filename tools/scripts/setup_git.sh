@@ -18,3 +18,5 @@ if [ -n "$email" ]; then
         ssh-add ~/.ssh/id_rsa
     fi
 fi
+
+git config --global core.editor "lvim"

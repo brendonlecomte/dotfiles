@@ -1,0 +1,12 @@
+
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+source $ZSH/oh-my-zsh.sh
+
+frontend() {
+  # prep nvm for frontend dev purposes
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
+
+eval "$(oh-my-posh init zsh --config  $(brew --prefix oh-my-posh)/themes/agnoster.omp.json)"

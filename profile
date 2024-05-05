@@ -1,24 +1,16 @@
-export EDITOR=lvim
-export TERM=xterm-256color
+# export EDITOR=lvim
+# export TERM=xterm-256color
 
-if [ -d ~/.local/bin ]; then
-    export PATH=~/.local/bin:$PATH
-fi
+# if [ -d ~/.local/bin ]; then
+#     export PATH=~/.local/bin:$PATH
+# fi
 
-if [ $(which powerline-daemon) ]; then
-    powerline-daemon -q
-fi
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if [ "$(uname)" == "Darwin" ] && [ -d $(brew --prefix llvm) ]; then
-    export PATH=$(brew --prefix llvm)/bin:$PATH
-fi
+# alias dotfiles="git -C ~/dotfiles"
 
-if [ -n "$KITTY_WINDOW_ID" ] && [ -n $(which fish) ]; then
-    SHELL=fish
-    exec fish
-fi
-
-alias dotfiles="git -C ~/dotfiles"
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

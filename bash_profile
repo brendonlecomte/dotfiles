@@ -1,4 +1,4 @@
-if [ -f ~/.bashrc ]; then
-  source ~/.profile
-fi
-. "$HOME/.cargo/env"
+# if [ -f ~/.bashrc ]; then
+#   source ~/.profile
+# fi
+# . "$HOME/.cargo/env"
