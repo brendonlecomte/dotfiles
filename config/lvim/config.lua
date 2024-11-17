@@ -16,9 +16,6 @@ lvim.plugins = {
     'preservim/vimux',
   },
   {
-    'fatih/vim-go',
-  },
-  {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "InsertEnter",

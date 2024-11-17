@@ -11,7 +11,7 @@ alias lvim="$HOME/.local/bin/lvim"
 
 # Dotfiles exports
 export DOTDIR=$HOME/dotfiles
-export HELPER=$DOTDIR/tools/helpers
+export HELPERS=$DOTDIR/tools/helpers
 
 # Golang Exports
 export GOROOT="$(brew --prefix golang)/libexec"

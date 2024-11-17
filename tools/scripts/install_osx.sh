@@ -1,4 +1,5 @@
 #! /bin/bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # ensure brew is up to date
 brew update
