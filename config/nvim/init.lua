@@ -1,7 +1,6 @@
 --[[
 
 =====================================================================
-==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
 ========                                    .-----.          ========
 ========         .----------------------.   | === |          ========
@@ -130,15 +129,11 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
--- TODO: vim mappings
--- lvim.builtin.which_key.mappings["v"] = { name = "+Vim",
---  w = { "<cmd>set list!<cr>", "Whitespace" },
---  r = { "<cmd>set relativenumber!<cr>", "Relative Number" },
---  n = { "<cmd>set nonumber!<cr>", "Line Numbers" },
---  t = { "<cmd>set expandtab!<cr>", "Toggle Expandtab" },
---  l = { "<cmd>Limelight!!<cr>", "Toggle Limelight" },
--- }
-
+vim.keymap.set("n", "<leader>vw", "<cmd>set list!<cr>", { desc = "[V]im [W]hitespace", silent = true })
+vim.keymap.set("n", "<leader>vr", "<cmd>set relativenumber!<cr>", { desc = "[V]im [R]elative", silent = true })
+vim.keymap.set("n", "<leader>vn", "<cmd>set nonumber!<cr>", { desc = "[V]im [N]umbers", silent = true })
+vim.keymap.set("n", "<leader>vt", "<cmd>set expandtab!<cr>", { desc = "[V]im [T]abs", silent = true })
+vim.keymap.set("n", "<leader>vc", "<cmd>Telescope colorscheme<cr>", { desc = "[V]im [C]olourscheme", silent = true })
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -179,9 +174,14 @@ vim.opt.rtp:prepend(lazypath)
 
 -- empty setup using defaults
 require("lazy").setup({
-	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 	"tpope/vim-fugitive", -- Best Git plugin.
+	"github/copilot.vim", -- Start Vim/Neovim and invoke :Copilot setup.
+
+	{
+		"APZelos/blamer.nvim",
+		vim.keymap.set("n", "<leader>gb", ":BlamerToggle<CR>", { desc = "Toggle [G]it[B]lame", silent = true }),
+	},
 
 	-- NOTE: Plugins can also be added by using a table,
 	-- with the first argument being the link and the following
@@ -267,11 +267,13 @@ require("lazy").setup({
 			-- Document existing key chains
 			spec = {
 				{ "<leader>c", group = "[C]ode", mode = { "n", "x" } },
+				{ "<leader>g", group = "[G]it" },
 				{ "<leader>d", group = "[D]ocument" },
 				{ "<leader>r", group = "[R]ename" },
 				{ "<leader>s", group = "[S]earch" },
 				{ "<leader>w", group = "[W]orkspace" },
 				{ "<leader>t", group = "[T]oggle" },
+				{ "<leader>v", group = "[V]im" },
 				{ "<leader>h", group = "Git [H]unk", mode = { "n", "v" } },
 			},
 		},
@@ -581,9 +583,8 @@ require("lazy").setup({
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
-				-- ts_ls = {},
+				ts_ls = {},
 				--
-
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes = { ...},
@@ -790,10 +791,7 @@ require("lazy").setup({
 		end,
 	},
 
-	{ -- You can easily change to a different colorscheme.
-		-- Change the name of the colorscheme plugin below, and then
-		-- change the command in the config to whatever the name of that colorscheme is.
-		--
+	{
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
 		"folke/tokyonight.nvim",
 		priority = 1000, -- Make sure to load this before all the other start plugins.
@@ -902,33 +900,6 @@ require("lazy").setup({
 			vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Open NvimTree", silent = true })
 		end,
 	},
-
-	-- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
-	-- init.lua. If you want these files, they are in the repository, so you can just download them and
-	-- place them in the correct locations.
-
-	-- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
-	--
-	--  Here are some example plugins that I've included in the Kickstart repository.
-	--  Uncomment any of the lines below to enable them (you will need to restart nvim).
-	--
-	-- require 'kickstart.plugins.debug',
-	-- require 'kickstart.plugins.indent_line',
-	-- require 'kickstart.plugins.lint',
-	-- require 'kickstart.plugins.autopairs',
-	-- require 'kickstart.plugins.neo-tree',
-	-- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
-
-	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
-	--    This is the easiest way to modularize your config.
-	--
-	--  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-	-- { import = 'custom.plugins' },
-	--
-	-- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
-	-- Or use telescope!
-	-- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
-	-- you can continue same window with `<space>sr` which resumes last telescope search
 }, {
 	ui = {
 		-- If you are using a Nerd Font: set icons to an empty table which will use the

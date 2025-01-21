@@ -19,4 +19,4 @@ if [ -n "$email" ]; then
     fi
 fi
 
-git config --global core.editor "lvim"
+git config --global core.editor "nvim"
