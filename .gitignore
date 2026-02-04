@@ -13,3 +13,5 @@ config/lvim/plugin
 
 # nvim autoload from plugins
 config/nvim/autoload
+
+.DS_Store

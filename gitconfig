@@ -1,0 +1,24 @@
+[core]
+	editor = nvim
+
+[init]
+	defaultBranch = main
+[branch]
+	sort = -committerdate 
+[tag]
+	sort = version:refname
+[column]
+	ui = auto
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+[merge]
+	conflictStyle = zdiff3
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
+ push]
+	autoSetupRemote = true

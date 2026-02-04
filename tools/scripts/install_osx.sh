@@ -7,6 +7,9 @@ brew update
 # install required packages
 brew install tmux
 brew install --HEAD neovim
+brew install lazygit
+brew install --cask bitwarden
+brew install --cask rectangle
 
 # new terminal theme manager...
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
