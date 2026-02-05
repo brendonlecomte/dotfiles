@@ -10,6 +10,7 @@ brew install --HEAD neovim
 brew install lazygit
 brew install --cask bitwarden
 brew install --cask rectangle
+brew install --cask ghostty
 
 # new terminal theme manager...
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
