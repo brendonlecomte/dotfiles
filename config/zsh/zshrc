@@ -1,5 +1,6 @@
-
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+# https://github.com/ohmyzsh/ohmyzsh/wiki/plugins
+# Plugin Wiki
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 frontend() {

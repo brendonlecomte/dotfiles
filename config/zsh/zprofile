@@ -32,7 +32,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Oh-my-zsh export
-export ZSH="/Users/brendon.lecomte/.oh-my-zsh"
+export ZSH="/Users/brendon/.oh-my-zsh"
 # plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 # source $ZSH/oh-my-zsh.sh
 
