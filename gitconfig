@@ -28,3 +28,5 @@
 [user]
 	name = Brendon Le Comte
 	email = brendon.lecomte@lightspeedhq.com
+[commit]
+	template = ~/.gitmessage

@@ -8,6 +8,7 @@ ln -s "$SCRIPTPATH/tools" ~/.tools
 ln -s "$SCRIPTPATH/tmux.conf" ~/.tmux.conf
 ln -s "$SCRIPTPATH/clang-format-defaults" ~/.clang-format
 ln -s "$SCRIPTPATH/gitconfig" ~/.gitconfig
+ln -s "$SCRIPTPATH/gitmessage" ~/.gitmessage
 
 # Install required tools
 # OS dependant config folder links
