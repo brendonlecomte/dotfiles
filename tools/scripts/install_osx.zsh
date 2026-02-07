@@ -1,5 +1,5 @@
-#! /bin/bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#!/bin/zsh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # ensure brew is up to date
 brew update
@@ -16,4 +16,4 @@ brew install --cask ghostty
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 
 # link config folder into root directory
-ln -sf $1/config ~/.config
+ln -sf "$1/config" ~/.config

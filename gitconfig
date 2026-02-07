@@ -20,5 +20,11 @@
 	all = true
 [help]
 	autocorrect = prompt
- push]
+[push]
 	autoSetupRemote = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[user]
+	name = Brendon Le Comte
+	email = brendon.lecomte@lightspeedhq.com
