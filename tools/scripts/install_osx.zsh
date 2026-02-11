@@ -11,6 +11,9 @@ brew install lazygit
 brew install --cask bitwarden
 brew install --cask rectangle
 brew install --cask ghostty
+brew install gnupg
+brew install ripgrep
+brew install fzf
 
 # new terminal theme manager...
 brew install jandedobbeleer/oh-my-posh/oh-my-posh

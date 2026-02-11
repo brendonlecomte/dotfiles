@@ -14,4 +14,8 @@ config/lvim/plugin
 # nvim autoload from plugins
 config/nvim/autoload
 
+config/gh
+config/composer
+config/cagent
+
 .DS_Store
